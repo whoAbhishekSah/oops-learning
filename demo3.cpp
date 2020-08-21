@@ -16,6 +16,27 @@ class Dog{
     }
 };
 
+class LinkedList {
+
+}
+
+class MyStack{
+  private:
+    // int[50] ary;
+    LinkedList l1;
+    int lastItr = -1;
+  public:
+    void push(int n){
+      l1.insert(n);
+    }
+    void pop(){
+      l1.delete_last();
+    }
+    int top(){
+      return l1.get_head();
+    }
+}
+
 int main(){
   Dog d1;
   string color;
