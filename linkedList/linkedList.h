@@ -6,6 +6,7 @@ class LinkedList
     int x = 10;
     void justRandomPrivateMethod(int y);
   public:
+    LinkedList(int x);
     void insertAtFront(int x);
     void insertAtEnd(int x);
     void deleteFirst(int x);
