@@ -3,6 +3,7 @@
 class LinkedList
 {
   private:
+    int x = 10;
     void justRandomPrivateMethod(int y);
   public:
     void insertAtFront(int x);
@@ -11,5 +12,7 @@ class LinkedList
     void deleteLast(int x);
     bool checkElementExist(int x);
 };
+
+//interface is always the public methods
 
 

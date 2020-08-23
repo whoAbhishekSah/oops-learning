@@ -14,7 +14,7 @@ void LinkedList::justRandomPrivateMethod(int y)
 {
   //...
   //...custom implementation
-  cout<<"called from pvt mthd with "<<y<<endl;
+  cout<<"called from pvt mthd with "<< x + y<<endl;
   return;
 }
 
