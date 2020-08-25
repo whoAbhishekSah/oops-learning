@@ -2,6 +2,10 @@
 // Customer can be made of 1 string(name), 1 number(id), 1 Address
 // Address can be made of 5 string(flat no, street, locality, district,  state)
 
+//Array, stack, heap, vector, queue, pointer
+//primitive - int, string, char, bool
+//cutom data type - class
+//
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -86,6 +90,12 @@ public:
         showDetails();
         showAddress();
     }
+
+    void deposit(int x)
+    {
+        balance += x;
+        showDetails();
+    }
 };
 
 class Bank
@@ -153,6 +163,10 @@ public:
             cout << "Bad input\n";
         }
     }
+    void depositCash(int customer_id, int amount)
+    {
+        customer_ary[customer_id - 1].deposit(amount);
+    }
 };
 
 int main()
@@ -164,5 +178,9 @@ int main()
         cout << "set address\n";
         bank.setAddressForCustomer();
         bank.describeAllCustomersInDetail();
+        cout<<"deposit cash: enter cutomer id, amount";
+        int x, y;
+        cin>>x>>y;
+        bank.depositCash(x, y);
     }
 }
