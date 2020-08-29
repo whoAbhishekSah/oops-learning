@@ -18,7 +18,7 @@ class MyClass{
 int main(int argc, char const *argv[])
 {
     MyClass obj;
-    cout<<obj.add(4, 5)<<endl;
+    cout<<obj.add(4, 'A')<<endl;
     return 0;
 }
 
