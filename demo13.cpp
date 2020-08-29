@@ -44,8 +44,3 @@ public:
         oil.increaseOil(y);
     }
 };
-
-/*How to decide highly coupled or loosely coupled ?
-1. A change in one module usually forces a ripple effect of changes in other modules.
-for ex; tomorrow oil changes its implementation. If you have to now change the Car implementation,
-it means there is tight coupling.
