@@ -61,7 +61,9 @@ public:
         cout << "\nCopy constructor called\n";
         name = s.name;
         roll_number = s.roll_number;
-        marks = s.marks;
+        marks = new int[2];
+        marks[0]= s.marks[0];
+        marks[1]= s.marks[1];
     }
     void describe()
     {
