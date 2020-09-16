@@ -7,7 +7,7 @@ using namespace std;
 //Base class
 class Employee
 {
-	private:
+	protected:
         int employee_id;
         int salary;
         string designation;
@@ -36,6 +36,11 @@ class ITEmployee : public Employee
             cout<<"derived ctr\n";
             expertise = str;
         }
+        void describe_it_employee(){
+            cout<<"\nEmployee id:\t"<<employee_id<<"\nSalary:\t"<<salary<<"\nDesignation:\t"<<designation<<endl;
+            cout<<"Expertise\n"<<expertise<<endl;
+        }
+
         ~ITEmployee(){
             cout<<"~Derived called\n";
         }
@@ -46,4 +51,5 @@ int main()
 {
     ITEmployee it_emp_1(1, 1000, "IT E", "java, c++, python");  //is-A relationship
     it_emp_1.describe();
+    it_emp_1.describe_it_employee();
 }
