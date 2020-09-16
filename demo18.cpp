@@ -18,6 +18,9 @@ class Employee
             salary = y;
             designation = a;
         }
+        ~Employee(){
+            cout<<"~Base called\n";
+        }
         void describe(){
             cout<<"\nEmployee id:\t"<<employee_id<<"\nSalary:\t"<<salary<<"\nDesignation:\t"<<designation<<endl;
         }
@@ -32,6 +35,9 @@ class ITEmployee : public Employee
         ITEmployee(int x, int y, string a, string str) : Employee(x, y, a){
             cout<<"derived ctr\n";
             expertise = str;
+        }
+        ~ITEmployee(){
+            cout<<"~Derived called\n";
         }
 };
 
